@@ -9,6 +9,7 @@ con=None
 urlparse.uses_netloc.append('postgres')
 url = urlparse.urlparse(os.environ['DATABASE_URL'])
 
+
 def dbexecute(sqlcommand, receiveback):
   databasename=os.environ['DATABASE_URL']
   #username=''
