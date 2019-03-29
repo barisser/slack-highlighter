@@ -1,5 +1,6 @@
 import db
 
+
 def init():
     dbstring = "create table users (username varchar(100), activity varchar(1000), last_heard_at bigint);"
     db.dbexecute(dbstring, False)
